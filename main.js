@@ -6,7 +6,7 @@ let pinAnswer = await inquirer.prompt([
     {
         name: "pin",
         message: "enter your pin",
-        type: "number",
+        type: "number"
     }
 ]);
 // Conditional Statement True 0R False
@@ -25,7 +25,7 @@ if (pinAnswer.pin === myPin) {
             {
                 name: "amount",
                 message: "enter your amount",
-                type: "number",
+                type: "number"
             }
         ]);
         // =, -=, +=
@@ -33,7 +33,7 @@ if (pinAnswer.pin === myPin) {
         console.log("Your remaining balance is: " + myBalance);
     }
     else if (operationAns.operation === "check balance") {
-        console.log("your balnce is:" + myBalance);
+        console.log("your balance is:" + myBalance);
     }
 }
 else {
