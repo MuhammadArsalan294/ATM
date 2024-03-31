@@ -18,21 +18,21 @@ if (pinAnswer.pin === myPin) {
     console.log("Correct pin code!!!");
 
     let operationAns = await inquirer.prompt([
-            {
-                name: "operation",
-                message: "please select option",
-                type: "list",
-                choices: ["withdraw", "check balance"]
-            }
+        {
+            name: "operation",
+            message: "please select option",
+            type: "list",
+            choices: ["withdraw", "check balance"]
+        }
     ]);
 
     if (operationAns.operation === "withdraw") {
         let amountAns = await inquirer.prompt([
-                {
-                    name: "amount",
-                    message: "enter your amount",
-                    type: "number"
-                }
+            {
+                name: "amount",
+                message: "enter your amount",
+                type: "number"
+            }
     ]);
 
         // =, -=, +=
@@ -43,7 +43,7 @@ if (pinAnswer.pin === myPin) {
         console.log("your balance is:" + myBalance);
     }
 
-}
+} 
 else {
     console.log("Incorrect pin number");
 }
