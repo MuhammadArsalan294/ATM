@@ -16,6 +16,7 @@ let pinAnswer = await inquirer.prompt(
 );
 
 // Conditional Statement True 0R False
+//     1234       ===  1234  - true
 if (pinAnswer.pin === myPin) {
     console.log("Correct pin code!!!");
 
